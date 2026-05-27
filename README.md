@@ -33,6 +33,8 @@ https://jb256-git.github.io/kic_chatroom.github.io/
 5. Öffne dann die README-Datei auf die gleiche Weise und aktualisiere den Chatroom-Link, damit er auf deine neue Chatroom-Webseite verweist.
 
 *Hinweis: Es kann ein paar Minuten dauern, bis deine Seite online ist.*
+JB: Fehlersuche im Chatbot Server sollte folgendermaßen möglich sein:
+Du kannst systematisch so vorgehen: 1. Rasa mit vielen Logs starten: `rasa run --port 5005 -vv --enable-api --cors "*"`. Dann siehst du im Terminal jede eingehende Anfrage und Antwort.[1] 2. Prüfen, ob die URL im Chatroom exakt der im Ports-Tab für Port 5005 entspricht und der Port auf Public steht. Einen separaten „Debugger“ für die REST-API gibt es im Kurs nicht, aber die -vv-Logs zeigen dir, was ankommt und rausgeht.
 
 
 
